@@ -1,22 +1,98 @@
-<div class="nav">
-  <nav class="nav fixed-top">
+<div style="width:100vw">
+  <nav class="nav">
     <div class="navbar-home-red">
+      <div class="form-social">
+        <nav class="nav ml-auto">
+          <div>
+            <label for=""><strong>Receba novidades</strong></label>
+            <input class="news-form" type="text" placeholder="Email:" value="">
+            <button class="btn-submit" type="button" name="button">ENVIAR</button>
+          </div>
+          <div style="margin-left:35px">
+            <a href="https://www.facebook.com/choppbrasiliabier/"><button class="btn-social" type="button" name="button"><i class="fab fa-facebook-f"></i></button></a>
+            <a href="https://www.instagram.com/choppbrasilia/"><button class="btn-social rounded-circle" type="button" name="button"><i class="fab fa-instagram"></i></button></a>
+          </div>
+        </nav>
+      </div>
     </div>
     <div class="nav navbar-home-white">
-      <nav class="ml-auto" style="marging-right: 1%;">
-        <ul class="nav">
-          <li class="nav-item menu-item">Home</li>
-          <li class="nav-item menu-item">Quem Somos</li>
-          <li class="nav-item menu-item">Distribuidores</li>
-          <li class="nav-item menu-item">Calcule seu Chopp</li>
-          <li class="nav-item menu-item">Produtos Parceiros</li>
-          <li class="nav-item menu-item">Peça seu Chopp</li>
-        </ul>
-      </nav>
+      <div class="menu-nav">
+        <nav class="nav ml-auto" style="">
+          <ul class="nav">
+            <li class="nav-item menu-item">Home</li>
+            <li class="nav-item menu-item">Quem Somos</li>
+            <li class="nav-item menu-item">Distribuidores</li>
+            <li class="nav-item menu-item">Calcule seu Chopp</li>
+            <li class="nav-item menu-item">Produtos Parceiros</li>
+            <li class="nav-item menu-item">Peça seu Chopp</li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <img src="<%= asset_path('logo.png') %>" class="navbar-brand logo" align="left">
-  </nav>
+    <img src="<%= asset_path('logo.png') %>" class="navbar-brand logo img-fluid" align="left"></nav>
 </div>
-<div class="">
-  <img src="<%= asset_path('banner-topo-distribuidor.png') %>" align="left" width="100%">
+<div class="banner-div">
+  <img class="img-fluid banner-image" src="<%=asset_path('banner-topo-distribuidor@2x.png') %>" alt="">
+</div>
+<div class="about-div">
+  <div class="row">
+    <div class="col-md-6">
+        <img class="img-about" src="<%= asset_path('about-us.png')%>">
+    </div>
+    <div class="col-md-6">
+      <br>
+      <br>
+      <p class="about-text">A Cervejaria <strong>Brasília Bier</strong> iniciou ruas atividades no ano de 2007 no Distrito Federal,
+        com a proposta de oferecer um produto de alta qualidade para um público exigente e apreciador de um excelente chopp.
+        <br><br>
+        Com sede própria em Brasília, possuímos espalhados nas mais diversas regiões, proporcionando mais rapidez e eficácia na hora
+        de atender o consumidor. Além da entrega de chopp em domicilio, festas e eventos, fazemos também o atendimento a bares
+        e restaurantes.</p>
+    </div>
+  </div>
+</div>
+<div class="distributor">
+  <div class="row">
+    <div class="col-md-6 position-relative" style="top: 50%; left: 2%; width: 520px; height:auto; color: white; font-size: 38px;">
+      <div class="find-distributor">
+        <p>Encontre o <strong>distribuidor</strong><br> mais próximo de você.</p>
+        <button class="btn-distributor" type="button" name="button">BUSCAR</button>
+      </div>
+    </div>
+    <div class="col-md-6" ">
+      <img src="<%= asset_path('distributor-img.png')%>">
+    </div>
+  </div>
+</div>
+<div class="calculator-div" style="">
+  <div class="py-5 bg-primary" style=">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center pb-5" contenteditable="true"><b>CALCULE SEU <b>CHOPP</b></b></h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="align-self-center col-md-6" style="">
+          <img class="img-fluid d-block" src="assets/calculator.png"> </div>
+        <div class="col-md-6" style="">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="">Paragraph. Then, my friend, when darkness overspreads my eyes, and heaven and earth seem to dwell in my soul and absorb its power, like the form of a beloved mistress, then I often think with longing.</p>
+            </div>
+          </div>
+          <form class="form-inline">
+            <div class="form-group">
+              <input type="email" class="form-control bg-light" id="inputmailinline" placeholder="E-mail" > </div>
+            <div class="form-group">
+              <input type="password" class="form-control mx-2" id="inputpasswordinline" placeholder="Password"> </div>
+            <button type="submit" class="btn btn-primary ">Log in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container"></div>
+  </div>
 </div>
