@@ -1,98 +1,264 @@
-<div style="width:100vw">
-  <nav class="nav">
-    <div class="navbar-home-red">
-      <div class="form-social">
-        <nav class="nav ml-auto">
-          <div>
-            <label for=""><strong>Receba novidades</strong></label>
-            <input class="news-form" type="text" placeholder="Email:" value="">
-            <button class="btn-submit" type="button" name="button">ENVIAR</button>
-          </div>
-          <div style="margin-left:35px">
-            <a href="https://www.facebook.com/choppbrasiliabier/"><button class="btn-social" type="button" name="button"><i class="fab fa-facebook-f"></i></button></a>
-            <a href="https://www.instagram.com/choppbrasilia/"><button class="btn-social rounded-circle" type="button" name="button"><i class="fab fa-instagram"></i></button></a>
-          </div>
-        </nav>
-      </div>
-    </div>
-    <div class="nav navbar-home-white">
-      <div class="menu-nav">
-        <nav class="nav ml-auto" style="">
-          <ul class="nav">
-            <li class="nav-item menu-item">Home</li>
-            <li class="nav-item menu-item">Quem Somos</li>
-            <li class="nav-item menu-item">Distribuidores</li>
-            <li class="nav-item menu-item">Calcule seu Chopp</li>
-            <li class="nav-item menu-item">Produtos Parceiros</li>
-            <li class="nav-item menu-item">Peça seu Chopp</li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <img src="<%= asset_path('logo.png') %>" class="navbar-brand logo img-fluid" align="left"></nav>
+<div class="row">
+	<nav class="nav">
+		<div class="navbar-home-red">
+			<div class="form-social">
+				<nav class="nav ml-auto">
+					<div>
+						<label for=""><strong>Receba novidades</strong></label>
+						<input class="news-form" type="text" placeholder="Email:" value="">
+						<button class="btn-submit" type="button" name="button">ENVIAR</button>
+					</div>
+					<div style="margin-left:35px">
+						<a href="https://www.facebook.com/choppbrasiliabier/"><button class="btn-social" type="button" name="button"><i class="fab fa-facebook-f"></i></button></a>
+						<a href="https://www.instagram.com/choppbrasilia/"><button class="btn-social rounded-circle" type="button" name="button"><i class="fab fa-instagram"></i></button></a>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="nav navbar-home-white">
+			<div class="menu-nav">
+				<nav class="nav ml-auto">
+					<ul class="nav">
+						<a class=""href="#home"><li class="nav-item menu-item">Home</li></a>
+						<a class=""href="#about-us"><li class="nav-item menu-item">Quem Somos</li></a>
+						<a class=""href="#distributor"><li class="nav-item menu-item">Distribuidores</li></a>
+						<a class=""href="#calculate"><li class="nav-item menu-item">Calcule seu Chopp</li></a>
+						<a class=""href="#products"><li class="nav-item menu-item">Produtos Parceiros</li></a>
+						<a class=""href="#ask-chopp"><li class="nav-item menu-item">Peça seu Chopp</li></a>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<img src="<%= asset_path("logo.png") %>" class="navbar-brand logo img-fluid" align="left">
+	</nav>
 </div>
-<div class="banner-div">
-  <img class="img-fluid banner-image" src="<%=asset_path('banner-topo-distribuidor@2x.png') %>" alt="">
+<div class="row">
+	<div class="col-md-12">
+		<div class="banner-div">
+			<img class="img-fluid banner-image" src="<%= asset_path("banner-topo-distribuidor.png")%>">
+		</div>
+	</div>
 </div>
-<div class="about-div">
-  <div class="row">
-    <div class="col-md-6">
-        <img class="img-about" src="<%= asset_path('about-us.png')%>">
-    </div>
-    <div class="col-md-6">
-      <br>
-      <br>
-      <p class="about-text">A Cervejaria <strong>Brasília Bier</strong> iniciou ruas atividades no ano de 2007 no Distrito Federal,
-        com a proposta de oferecer um produto de alta qualidade para um público exigente e apreciador de um excelente chopp.
-        <br><br>
-        Com sede própria em Brasília, possuímos espalhados nas mais diversas regiões, proporcionando mais rapidez e eficácia na hora
-        de atender o consumidor. Além da entrega de chopp em domicilio, festas e eventos, fazemos também o atendimento a bares
-        e restaurantes.</p>
-    </div>
-  </div>
+<div class="row" id="about-us">
+	<div class="col-md-6">
+		<div class="about-div">
+			<img class="img-about" src="<%= asset_path("about-us.png")%>">
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="about-text">
+			<h4>A Cervejaria <strong>Brasília Bier</strong> iniciou ruas atividades no ano de 2007 no Distrito Federal,
+				com a proposta de oferecer um produto de alta qualidade para um público exigente e apreciador de um excelente chopp.
+				<br><br>
+				Com sede própria em Brasília, possuímos espalhados nas mais diversas regiões, proporcionando mais rapidez e eficácia na hora
+				de atender o consumidor. Além da entrega de chopp em domicilio, festas e eventos, fazemos também o atendimento a bares
+				e restaurantes.</h4>
+		</div>
+	</div>
 </div>
-<div class="distributor">
-  <div class="row">
-    <div class="col-md-6 position-relative" style="top: 50%; left: 2%; width: 520px; height:auto; color: white; font-size: 38px;">
-      <div class="find-distributor">
-        <p>Encontre o <strong>distribuidor</strong><br> mais próximo de você.</p>
-        <button class="btn-distributor" type="button" name="button">BUSCAR</button>
-      </div>
-    </div>
-    <div class="col-md-6" ">
-      <img src="<%= asset_path('distributor-img.png')%>">
-    </div>
-  </div>
+<div class="row" id="distributor">
+	<div class="col-md-6">
+		<div class="distributor-text">
+			<h1>Encontre o <strong>distribuidor</strong><br> mais próximo de você.</h1>
+			<button class="btn-distributor" type="button" name="button">BUSCAR</button>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<img src="<%= asset_path("distributor-img.png")%>">
+	</div>
 </div>
-<div class="calculator-div" style="">
-  <div class="py-5 bg-primary" style=">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="text-center pb-5" contenteditable="true"><b>CALCULE SEU <b>CHOPP</b></b></h1>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="align-self-center col-md-6" style="">
-          <img class="img-fluid d-block" src="assets/calculator.png"> </div>
-        <div class="col-md-6" style="">
-          <div class="row">
-            <div class="col-md-12">
-              <p class="">Paragraph. Then, my friend, when darkness overspreads my eyes, and heaven and earth seem to dwell in my soul and absorb its power, like the form of a beloved mistress, then I often think with longing.</p>
-            </div>
-          </div>
-          <form class="form-inline">
-            <div class="form-group">
-              <input type="email" class="form-control bg-light" id="inputmailinline" placeholder="E-mail" > </div>
-            <div class="form-group">
-              <input type="password" class="form-control mx-2" id="inputpasswordinline" placeholder="Password"> </div>
-            <button type="submit" class="btn btn-primary ">Log in</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="container"></div>
-  </div>
+
+
+<section id="calculate" class="calculator-section" style="background-image: url(<%= asset_path("calcule-o-seu-chopp.png")%>)">
+	<h1 style="font-style: italic; aling:center; margin-bottom: 3%;" class="text-center"><b>CALCULE SEU <b>CHOPP</b></b></h1>
+	<div class="row">
+		<div id="calc-img" class="col-md-6">
+			<div class="row">
+				<img class="img-fluid d-block calculator-img" src="<%= asset_path("calculator.png")%>">
+			</div>
+		</div>
+		<div id="text" class="col-md-6" style="margin-top: 45px">
+			<h4 class="calculator-text">Para saber a quantidade de chopp necessária para seu evento, faremos aqui um cálculo aproximado,
+				levando-se em consideração o número de pessoas que estarão presentes. Aproveite e beba com moderação.</h4>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row">
+						<p><b>HOMENS</b></p>
+					</div>
+					<div class="row">
+						<input type="number" value="0" class="form-control bg-input" id="man" style="width: 80%">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<p><b>MULHERES</b></p>
+					</div>
+					<div class="row">
+						<input type="number" value="0" class="form-control bg-input" id="woman" style="width: 80%">
+					</div>
+				</div>
+				<button onclick="choppcalc()" id="btn-calc" class="btn">CALCULAR</button>
+			</div>
+			<div class="row">
+				<span class="c-result">RESULTADO (<b>ESTIMATIVA DE LITROS NECESSÁRIOS</b>)</span>
+				<div class="calculator-result">
+					<span id="calc-result"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="products" class="row" style="background-color: #D0961F; color: white; padding-bottom: 35px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 style="font-style: italic" class="py-5 text-center"><b>PRODUTOS</b></h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="img-sample"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="img-sample"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="img-sample"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="img-sample"></div>
+			</div>
+		</div>
+		<div class="col-md-12" align="center">
+			<button id="product-button" class="btn">SAIBA MAIS</button>
+		</div>
+	</div>
+</section>
+
+<section id="ask-chopp">
+	<h1 class="text-center" style="font-style: italic; margin-bottom:2.3%">PEÇA SEU <b style="font-weight: 900; color: #E22626;">CHOPP BRASÍLIA</b></h1>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row">
+						<%# Aqui virá o form em Ruby direcionando os resultados para a interface de administrador. %>
+						<label>NOME:</label>
+					</div>
+					<div class="row">
+						<input type="text" class="form-control" style="width:80%">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<label><i class="fab fa-whatsapp"></i> TELEFONE/WHATSAPP:</label>
+					</div>
+					<div class="row">
+						<input type="text" class="form-control" style="width:80%">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<label style="margin-top: 0.5rem">EMAIL:</label>
+			</div>
+			<div class="row">
+				<input type="text" class="form-control" style="width: 90%">
+			</div>
+			<div class="row">
+				<label style="margin-top: 0.5rem">ENDEREÇO DO EVENTO:</label>
+			</div>
+			<div class="row">
+				<input type="text" class="form-control" style="width: 90%">
+			</div>
+			<div class="row">
+				<label style="margin-top: 0.5rem">DATA:</label>
+			</div>
+			<div class="row">
+				<input type="date" class="form-control" style="width: 90%">
+			</div>
+			<div style="padding-top: 10px;" class="row">
+				<div class="col-md-3">
+					<div class="row">
+						<label>30 LITROS:</label>
+					</div>
+					<div class="row">
+						<input type="checkbox" class="form-control">
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<label>QNTD:</label>
+					</div>
+					<div class="row">
+						<input type="number" class="form-control" style="background-color: white" style="width: 30%;">
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<label>50 LITROS:</label>
+					</div>
+					<div class="row" align="left">
+						<input type="checkbox" class="form-control">
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<label>QNTD:</label>
+					</div>
+					<div class="row">
+						<input type="text" class="form-control" style="width:60%">
+					</div>
+				</div>
+			</div>
+			<div class="row" align="right">
+				<button id="btn-ask" class="btn">ENVIAR PEDIDO</button>
+			</div>
+		</div>
+		<div class="col-md-6" id="chopp-img" align="right">
+			<img src="<%= asset_path("request.png")%>">
+		</div>
+	</div>
+</section>
+<div id="footer" class="row">
+	<div class="col-md-3">
+		<img id="img-footer" src="<%= asset_path("logo.png")%>">
+	</div>
+	<div class="col-md-3" style="margin-right: -15px">
+		<p><b>Links</b></p>
+		<ul class="nav flex-column">
+			<li class="nav-item"><a>Quem Somos</a></li>
+			<li class="nav-item"><a>Distribuidores</a></li>
+			<li class="nav-item"><a>Chopp</a></li>
+			<li class="nav-item"><a>Calcule seu Chopp</a></li>
+			<li class="nav-item"><a>Produtos Parceiros</a></li>
+			<li class="nav-item"><a>Peça seu Chopp</a></li>
+		</ul>
+	</div>
+	<div class="col-md-3">
+		<p><b>Fale Conosco</b></p>
+		<ul class="nav">
+			<li>0800 000 000</li><br>
+			<li>Segunda a Sexta das 09 às 18h.</li>
+			<li>Sábados das 10h às 17h.</li>
+			<li>Assistência Técnica (atendimento por telefone): Segunda à Domingo, das 09h às 23h.</li>
+		</ul>
+	</div>
+	<div id="midias-sociais-div" class="col-md-3">
+		<div class="row">
+			<p style="margin-bottom: 5px;"><b>Mídias Sociais</b></p>
+		</div>
+		<div class="row">
+			<a href="https://www.facebook.com/choppbrasiliabier/"><button class="btn-social" type="button" name="button"><i class="fab fa-facebook-f"></i></button></a>
+			<a href="https://www.instagram.com/choppbrasilia/"><button class="btn-social rounded-circle" type="button" name="button"><i class="fab fa-instagram"></i></button></a>
+		</div>
+		<div class="row" align="center">
+			<div class="container" style="align: center">
+				<div id="midias-sociais" class="row">
+					<p style="margin-bottom: 0px;">PROBIDO PARA MENORES DE 18 ANOS</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
